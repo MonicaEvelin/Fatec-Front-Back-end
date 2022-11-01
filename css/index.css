@@ -1,0 +1,674 @@
+:root {
+    --secound-bg-color: rgb(234, 21, 56);
+    --text-color: white;
+    --seconund-color: rgb(234, 21, 56);
+    --big-font: 5.7rem;
+    --h2-font: 3.8rem;
+    --p-font: 1rem;
+    --corFundo:#091217;
+    --fundoCdastro:#23242a;
+    --vermelho: rgba(234, 21, 57, 0.808);
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../imgs/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: grid;
+    align-items: center;
+    color: var(--text-color);
+  }
+  
+  section {
+    padding: 120px 16%;
+  }
+  
+  .home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    align-items: center;
+  }
+  
+  .home-text {
+    padding-top: 120px;
+  }
+  
+  .home-text h1 {
+    font-size: var(--big-font);
+    color: var(--text-color);
+    line-height: 1.11;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0 0 25px;
+  }
+  
+  .home-text h4 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    line-height: 1.21;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 33px;
+    background: var(--secound-bg-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    transition: .30s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-10px);
+    background: transparent;
+    background: black;
+    border: 2px solid var(--seconund-color);
+  }
+
+  /*Editais*/
+
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr;
+    width: 1000px;
+    margin: auto;
+    margin-top: 10em;
+    margin-bottom: 1em;
+}
+
+.texto-editais {
+    text-align: center;
+    justify-content: center;
+}
+
+.texto-editais h1 {
+    color: var(--vermelho);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/*----Começo area direita----*/
+
+.direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    margin-right: 1em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+}
+
+.direita p{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    font-size: 1.2em ;
+}
+
+.direita textarea{
+    width: 400px;
+    font-size: 1.2em ;
+}
+
+.campoDireita{
+    padding: 5px;
+    color: white;
+    border: 2px solid crimson;
+    background-color: var(--fundoCdastro);
+    outline: none;
+    text-align: justify;
+}
+
+/*----Começo imagem perfil----*/
+picture{
+    margin: auto;
+}
+
+picture>img{
+    width: 300px;
+    height: 300px;
+}
+
+#celular{
+    display: none;   
+}
+
+/*----Fim imagem perfil----*/
+
+
+
+/*----Fim area direita----*/
+
+/*----Começo area esquerda----*/
+.formulario{
+    padding: 1em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.formulario label{
+    color: white;;
+    font-size: 1.1em;
+    font-weight: 700;
+    align-self: center;
+    width: 300px;
+    font-size: 1.2em ;
+}
+
+
+.formulario input{
+    width: 300px;
+    height: 2em;
+    outline: none;
+    background-color: transparent;
+    border-width: 0px 0px 2px 0px;
+    border-color: crimson;
+    color: white;
+    font-size: 1.2em ;
+}
+
+
+
+
+/*----Fim area esquerda----*/
+
+/*----começo botões----*/
+.botoes{
+    height: 120px;
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+#cadastrar,#cancelar{
+    width: 250px;
+    height: 50px;
+    border-style: none;
+    border-radius: 30px;
+    font-size:1.2em;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: ease .40s;
+}
+
+#cadastrar{
+    background-color: var(--vermelho);
+}
+
+#cadastrar:hover {
+    background-color: white;
+    border: solid 2px var(--vermelho);
+    border-radius: 30px;
+    color: black;
+    transform: translateY(-10px);
+}
+
+#cancelar{
+    background-color: black;
+}
+
+#cancelar:hover {
+    background-color: white;
+    border: solid 2px var(--vermelho);
+    border-radius: 30px;
+    color: black;
+    transform: translateY(-10px);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .links a {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #ea1538;
+    text-decoration: none;
+  }
+  
+  .links a:hover,
+  .links a:nth-child(2) {
+    color: white;
+  }
+
+/*----Fim botões----*/
+
+@media (max-width: 1380px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        width: 1000px;
+        margin: auto;
+        margin-top: 7em;
+        margin-bottom: 1em;
+    }
+}
+
+
+/*Começo minhas vagas*/
+#mv{
+    text-align: center;
+    color: var(--vermelho);
+    font-size: 2em;
+    font-weight: 500;
+    margin: 2em;
+
+}
+
+.meusEditais{
+    width: 100%;
+    background-color: #333232;
+}
+
+.Edital{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    margin: auto;
+    width: 90%;
+    color: white;
+    border-top: 1px solid white;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.4em;
+    justify-content: right;
+}
+
+.data>img{
+    height: 20px;
+    width: 20px;
+}
+
+#cidade>img{
+    height: 20px;
+    width: 20px;
+}
+
+.Edital>a{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: var(--vermelho);
+}
+
+
+
+/*Fim minhas vagas*/
+  
+  @media (max-width: 1120px) {
+
+   
+   
+  }
+  
+  @media (max-width: 770px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        width: auto;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    picture>img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .formulario{
+        padding: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        font-size: 1.2em;
+    }
+
+    .formulario>input{
+        font-size: 1.2em;
+    }
+    
+    .direita{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+        margin-right: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        font-size: 1.2em;
+    }
+
+    .direita textarea{
+        width: 320px;
+        height: 150px;
+        font-size: 1.2em;
+    }
+
+    .botoes{
+        height: 120px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+
+    .direita>#bio{
+        margin-top: 2em;
+    }
+
+    .direita p{
+        color: white;
+        font-size: 1.1em;
+        font-weight: 700;
+        align-self: center;
+        width: 320px;
+    }
+
+    #celular{
+        display: block;
+    }
+  }
+
+  @media (max-width: 1380px) {
+    section{
+      padding: 80px 2%;
+      transition: .3s;
+    }
+    :root{
+      --big-font: 4.7rem;
+      --h2-font: 2.5rem;
+    }
+    .home-text h4 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
+  @media (max-width: 1120px) {
+   
+    .home{
+      height: 85vh;
+    }
+  }
+  
+  @media (max-width: 770px) {
+    picture>img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .formulario{
+        padding: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        font-size: 1.2em;
+    }
+
+    .formulario>input{
+        font-size: 1.2em;
+    }
+    
+    .direita{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+        margin-right: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        font-size: 1.2em;
+    }
+
+    .direita textarea{
+        width: 320px;
+        height: 150px;
+        font-size: 1.2em;
+    }
+
+    .botoes{
+        height: 120px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+
+    .direita>#bio{
+        margin-top: 2em;
+    }
+
+    .direita p{
+        color: white;
+        font-size: 1.1em;
+        font-weight: 700;
+        align-self: center;
+        width: 320px;
+    }
+
+    #celular{
+        display: block;
+    }
+  }
+  
+  @media (max-width: 750px) {
+  
+    picture>img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .formulario{
+        padding: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        font-size: 1.2em;
+    }
+
+    .formulario>input{
+        font-size: 1.2em;
+    }
+    
+    .direita{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+        margin-right: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        font-size: 1.2em;
+    }
+
+    .direita textarea{
+        width: 320px;
+        height: 150px;
+        font-size: 1.2em;
+    }
+
+    .botoes{
+        height: 120px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+
+    .direita>#bio{
+        margin-top: 2em;
+    }
+
+    .direita p{
+        color: white;
+        font-size: 1.1em;
+        font-weight: 700;
+        align-self: center;
+        width: 320px;
+    }
+
+    #celular{
+        display: block;
+    }
+
+  }
+  
+  @media (max-width: 630px) {
+    section {
+      padding: 90px 4%;
+    }
+    :root{
+      --big-font: 3.2rem;
+      --h2-font: 1.8rem;
+      --p-font: 0.9rem;
+    }
+    .home-text h4{
+      font-size: 1.2rem;
+    } 
+
+    .formulario{
+        padding: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+    
+    .direita{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+        margin-right: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        font-size: 1.2em;
+    }
+
+    .direita textarea{
+        width: 320px;
+        height: 150px;
+    }
+
+    .botoes{
+        height: 120px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .direita>#bio{
+        margin-top: 2em;
+    }
+
+    .direita p{
+        color: white;
+        font-size: 1.1em;
+        font-weight: 700;
+        align-self: center;
+        width: 320px;
+    }
+
+    #celular{
+        display: block;
+    }
+
+    picture{
+        display: none;
+    }
+
+    
+  }
